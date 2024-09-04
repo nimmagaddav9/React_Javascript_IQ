@@ -1,0 +1,308 @@
+Javascript
+-------------------------------------------
+What is Prototype chaining? Overriding the parent class functionality with child class functionality.
+What is callbacks?  - Passing "one function" to "another function" as an argument called as "CallBack"
+What is CallBack Hell?  Providing the tightly coupled code with call backs is called callback hell. 
+What is the problem of Callback hell? Readability is less and difficult. Remedy for callback is promises.
+                                      Callback hell is Not a recommended code. Call add, sub, multiplication, division. It is not easy to understand.
+
+Closure - if any inner function accessing the outer function data, then such scenario called as closure.
+Promise? 
+   Promises Establishes the communication between "producer" and "consumer".
+ 
+        - Promises also called as "special javascript objects".
+ 
+        - we will create Promises by using "Promise" class constructor.
+ 
+        - Promises have 3 states
+ 
+            1) success  (resolve)
+ 
+            2) error    (reject)
+ 
+            3) pending
+ 
+        - we will consume promises by using "then()"
+
+Storage types?  
+ HTML5 Supports two types of Storages.
+             1) local storage
+             2) session storage
+ 
+    - whenever we "close the browser" or "opens the new tab" we won't lost the data from local storage.
+ 
+    - whenever we "close the browser" or "opens the new tab" we will lost the data from session storage.
+ 
+    - "localStorage" is the predefined object used to work with the local storage.
+ 
+    - "sessionStorage" is the predefined object used to work with the session storage.
+ 
+    - we will store the data in the form of a "key & value" pairs.
+
+What is Component in React?
+	Components are the building blocks of any React app and a typical React app will have many of these. 
+  Simply put, a component is a JavaScript class or function that optionally accepts inputs i.e. properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
+
+What is DOM? ReactJS | Virtual DOM
+	DOM: DOM stands for ‘Document Object Model’. In simple terms, it is a structured representation of the HTML elements that are present in a webpage or web-app. 
+  It contains a node for each HTML element present in the web document.
+
+What is Functional Component?
+	A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element. 
+	or
+	A Functional component is a function that takes props and returns JSX. They do not have state or lifecycle methods. 
+  Functional components are easier to read, debug, and test. They offer performance benefits, decreased coupling, and greater reusability.
+
+What is class component?
+  A class component requires you to extend from React.Component and create a render function which returns a React element. 
+
+what is html?
+HTML is the standard markup language for Web pages. With HTML you can create your own Website.
+ 
+what is CSS??
+CSS is a language that describes the style of an HTML document. CSS describes how HTML elements should be displayed.
+ 
+In how many ways we can write CSS?
+There are three ways to apply CSS to HTML: Inline, internal, and external.
+Inline: <p style="color: red">text</p>
+Internal: Embedded, or internal, styles are used for the whole page. Inside the head element, the style tags surround all of the styles for the page.
+External: External styles are used for the whole, multiple-page website. There is a separate CSS file.
+ 
+4) Difference between Virtual DOM  and DOM ?
+A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing’s power to directly change what’s on the screen.
+Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen.
+ 
+5) create a function and execute it in the browser.
+<script> 
+ 
+    function fun_one(arg1,arg2,arg3){ 
+ 
+        console.log( arg1, arg2, arg3 ); 
+ 
+    }; 
+ 
+    fun_one("Angular","NodeJS","MongoDB");     //Angular NodeJS MongoDB 
+ 
+</script> 
+ 
+6) create login page with two field , one for email id and second one is password field , one button and show the data in the console.
+<form action="/action_page.php">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Submit">
+</form>
+ 
+7) tell me different tags in HTML.
+<!DOCTYPE>     Defines the document type
+<html>    Defines an HTML document
+<head>    Contains metadata/information for the document
+<title>    Defines a title for the document
+<body>    Defines the document's body
+<h1> to <h6>    Defines HTML headings
+<p>    Defines a paragraph
+<br>    Inserts a single line break
+<hr>    Defines a thematic change in the content
+<!--...-->    Defines a comment
+ 
+8) create two button in react js , one for increment and another for decrement , show the data in the browser.
+https://github.com/aghh1504/Increment-and-Decrease-number-onClick-React
+ 
+9) how to create project in react js ?
+npx create-react-app my-app
+cd my-app
+npm start
+ 
+10) Difference between react js and react native.
+React Native is a framework for building native applications using JavaScript. Mobile apps
+In React JS, React is the base abstraction of React DOM for the web platform, while with React Native, React is still the base abstraction but of React Native.
+So the syntax and workflow remain similar, but the components are different.
+  
+11) which is higher order component?
+A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.
+Concretely, a higher-order component is a function that takes a component and returns a new component.
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+ 
+12) what is redux? 
+A Predictable State Container for JS Apps.
+It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. 
+On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.
+You can use Redux together with React, or with any other view library. It is tiny (2kB, including dependencies), but has a large ecosystem of addons available.
+ 
+13) what is box model in CSS?
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+ 
+14) Different types of component in react js ? https://levelup.gitconnected.com/types-of-react-components-a38ce18e35ab
+Functional Components: Functional components are functions that takes in props and return JSX.
+Class Components: Class components use extends React.Component after declaring the class HelloWorld and requires a render() method to return JSX code
+Pure Components: Pure components are primarily used to provide optimizations. They are the simplest and fastest components we can write. They do not depend or modify the state of variables outside its scope. 
+                 Hence, why pure components can replace simple functional components.
+Higher-Order Components: A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+ 
+15 ) Difference between class level component and functional component?
+The most obvious one difference is the syntax. A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element.
+A class component requires you to extend from React.Component and create a render function which returns a React element. 
+
+  ---------------------------------------------------------------------------------------------------
+
+1. Difference between angular and react? 
+Angular is a complete framework while React is a JavaScript Library. 
+Angular uses a two-directional data flow process where it updates the Real DOM directly while React updates only the Virtual DOM and is concerned with the one-directional data flow.
+ 
+2. What is the need for redux? 
+Redux is used mostly for application state management. Redux maintains the state of an entire application in a single immutable state tree (object), which can’t be changed directly. 
+When something changes, a new object is created (using actions and reducers).
+ 
+3. How to manage state in redux? 
+By using Redux we’re solving this problems by introducing a central data store in our application. The store contains the state of the application and is the source of truth for components.
+By using the store concept you do not need to synchronize state between components manually. Instead you can fully rely on the Redux store at any time.
+ 
+4. Difference between state and props?
+In a React component, props are variables passed to it by its parent component. 
+State on the other hand is still variables, but directly initialized and managed by the component.
+ 
+5. why we use arrow functions? 
+Arrow functions acts like "callbacks" to receive the response from server. 
+  
+6. Tell me about reduce function? 
+reduce is a function that lets you reduce an array down to a single value. This value, which we’ll call the reduced value, can be any type you want such as a Map, Set, or any custom type defined by your project.
+ 
+7. Difference between pure and impure components?
+In React, components are pure if their output is only determined by their inputs ( props ), and are impure if their output is determined by something other than the inputs, namely their state.
+ 
+8. What is stateless component in react? 
+A stateless component is just a plain javascript function which takes props as an argument and returns a react element.
+ 
+9.  What is JSX in react? 
+JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
+ 
+10. Explain the purpose of render() in React. 
+Render function in react.js is used to return the HTML you want to display in a component.
+Every Render function contains a return statement. This return statement can contain only one parent html tag.
+ 
+11. Why we use routing? 
+React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
+ 
+12. How would you create Higher Order Components (HOCs) in React? 
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. 
+a higher-order component is a function that takes a component and returns a new component.
+ 
+13. What is the significance of keys in React? 
+Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
+  const numbers = [1, 2, 3, 4, 5]; const listItems = numbers.
+ 
+14. What is the significance of refs in React? 
+React Refs are a useful feature that act as a means to reference a DOM element or a class component from within a parent component.
+ 
+15. What are the differences between a class component and functional component?
+The most obvious one difference is the syntax. A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element. 
+A class component requires you to extend from React.Component and create a render function which returns a React element. 
+ 
+16. What is a higher order component? 
+HOC are a pattern that emerges from React’s compositional nature.
+Concretely, a higher-order component is a function that takes a component and returns a new component.
+ 
+17. How Virtual-DOM is more efficient than Dirty checking? 
+The virtual DOM is used for efficient re-rendering of the DOM. This isn't really related to dirty checking your data.In fact, the diff algorithm is a dirty checker itself but it is used to see if the DOM is dirty instead.
+ 
+18. What is render() in React? And explain its purpose? 
+Render function in react.js is used to return the HTML you want to display in a component.
+Every Render function contains a return statement. This return statement can contain only one parent html tag.
+ 
+19. What are controlled and uncontrolled components in React? 
+In a controlled component, form data is handled by a React component. The alternative is uncontrolled components, where form data is handled by the DOM itself.
+ 
+20. What are the life Cycle of ReactJS? 
+componentDidMount() {
+  }
+ 
+  componentWillUnmount() {
+  }
+//The componentDidMount() method runs after the component output has been rendered to the DOM. 
+ 
+21. What are the Advantages of ReactJS? 
+ReactJS simplifies the overall process of scripting components.
+It facilitates advanced maintenance and boosts productivity.
+It guarantees quicker rendering
+ 
+22. What do you know about synthetic events? 
+SyntheticEvent, a cross-browser wrapper around the browser’s native event. It has the same interface as the browser’s native event, including stopPropagation() and preventDefault(),
+except the events work identically across all browsers.
+
+-----------------------------------------------------------------------------------------
+ 
+1. What is difference between class and Functional Component?
+The most obvious one difference is the syntax. 
+A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element.
+A class component requires you to extend from React.Component and create a render function which returns a React element. 
+ 
+2. Explain Redux Flow?
+Redux allows you to manage the state of the application via a unidirectional flow where a child component can directly access the state from the redux store instead of getting state changes from parent components.
+ 
+3. Have you worked on React Hooks? 16.8.They let you use state and other React features without writing a class.
+Hooks are backwards-compatible.
+Hooks are functions that let you “hook into” React state and lifecycle features from function components. 
+Hooks don’t work inside classes — they let you use React without classes. 
+ 
+ 
+4. Have you worked with Promise &Async, Await()?
+ 
+Promise can handle multiple asynchronous operations easily and provide better error handling than callbacks and events.
+Async and Await: Helps us to write the asynchronous code in a synchronous way. Async is infront of function.
+Await is inside a function marked as async. 
+ 
+Promises Establishes the communication between "producer" and "consumer".  Promise return either Success or Failure. 
+Using reject we will catch the error. 
+To consume the promise we call async and await instead of then(). Latest released in ES9.
+ 
+ 
+5. How to perform async operations using redux?
+Async Operations. The Redux store supports strictly unidirectional and synchronous data flow. For asynchronous data flow, we need to apply some middleware to Redux. 
+This is done by enhancing createStore() with Redux's applyMiddleware() function, passing it the middleware to apply.
+ 
+6. How did you test your application?
+There are a few ways to test React components. Broadly, they divide into two categories:
+Rendering component trees in a simplified test environment and asserting on their output.
+Running a complete app in a realistic browser environment (also known as “end-to-end” tests).
+ 
+7. Which testing framework you have used and how code coverage % you were maintaining? JEST 100%
+Very fast performance. Compatible with React, VueJS, Angular and many projects.
+ 
+8. What challenges you faced during development?
+Integration of WF, Proofing, building text editor using slate.js
+ 
+9. Explain about your last project?
+CWB APP- Build a 1 stop shop for display content to capital ideas website.
+ 
+10. What is debouncing?
+Debouncing in JavaScript is a practice used to improve browser performance. 
+There might be some functionality in a web page which requires time-consuming computations. 
+If such a method is invoked frequently, it might greatly affect the performance of the browser, 
+as JavaScript is a single threaded language.
+ 
+ 
+11. Have you used redux-thunx?
+Redux Thunk is a middleware that lets you call action creators that return a function instead of an action object.
+That function receives the store's dispatch method, which is then used to dispatch regular synchronous actions inside 
+the body of the function once the asynchronous operations have completed.
+ 
+ 
+12. Have you used redux-saga?
+Redux-saga is a redux middleware library, that is designed to make handling side effects in your redux app nice and simple. It achieves this by leveraging an ES6 feature called Generators, 
+allowing us to write asynchronous code that looks synchronous, and is very easy to test.
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+  
+  

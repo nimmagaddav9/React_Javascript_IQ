@@ -6,6 +6,10 @@ What is CallBack Hell?  Providing the tightly coupled code with call backs is ca
 What is the problem of Callback hell? Readability is less and difficult. Remedy for callback is promises.
                                       Callback hell is Not a recommended code. Call add, sub, multiplication, division. It is not easy to understand.
 
+What is Routing? Navigating from 1 component to another component is called routing.
+SPA 
+Definition: Single Page application: Loading 1 component to another component without refreshing the whole project.
+
 Closure - if any inner function accessing the outer function data, then such scenario called as closure.
 Promise? 
    Promises Establishes the communication between "producer" and "consumer".

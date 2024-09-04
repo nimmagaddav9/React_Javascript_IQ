@@ -1,0 +1,317 @@
+I am a Core UI Developer with 10+ years of experience in building .com websites for different organizations using HTML5, CSS3, JavaScript, React.js, and Redux and currently working for United Airlines on the React Migration team for converting the dotnet 2.0 application to React 3.0 in different modules like Forgot-Password, United Club Pass, Sign-in Two factoring Authentication, etc.. 
+Extensively worked on weekly 35+ releases past 1 & 1/2 Year Upstream PR, documenting info on confluence, Downstream PR. Worked on Miles-Pooling,  Recent Activity, dashboard updates and KTN(Known Traveler number) features on united.com. I worked on Password-recovery, security questions, Sign-in features and deployment issues on dev(dev31, dev15), Staging (qa9) and production. 
+My area of expertise is gathering the requirements from the designer and product owners, and building a robust application that solves business needs.
+Previously worked with Accelerator team for Visa Inc. remediation of MBDA modules like Application Management, Account Management, Portfolio Management, Analytics, Recurring billing, Virtual Terminal, etc for bank users like Wells Fargo,  Bank of America, etc
+Capital Group worked on DAVIS Project. Davis stands for Data visualization where we build different highcharts using react and integrate into the AEM., the backend is Java. Previously I worked on Creative Workbench, a writing tool where articles are published on capital group websites.
+
+
+ReactJS is View in MVC.
+Virtual DOM is a virtual representation of the real DOM.
+React uses virtual DOM to enhance its performance.
+ 
+Difference between virtual dom and real dom?
+Suppose line of code is changed , processing is done on particular line.
+It will process the whole code in real dom. Virtual  dom is faster
+
+Redux is a predictable state container for JavaScript applications. It helps to you write applications, run in different environments and easy to test. And simply we called as Redux is a state management tool.
+Components in redux
+Actions -->Input Parameters Ex: Deposit and Withdraw money from ATM
+Store --> Main Server
+Reducers --> Business Logic
+Dispatch --> Request
+Subscribe --> Response
+State --> Store Component Data
+
+
+======================
+React component lifecycle has three categories – Mounting, Updating and Unmounting.
+Mounting – Birth of your component
+Update – Growth of your component
+Unmount – Death of your component
+
+React Component LifeCycle Hooks
+
+        1. constructor
+        2. componentWillMount()
+        3. render()
+        4. componentDidMount()
+        5. componentWillReceiveProps()
+        6. shouldComponentUpdate()
+
+        // component kill methods
+
+        7. componentWillUpdate()
+        8. componentDidUpdate()
+        9. componentWillUnmount()
+
+Recently Added LifeCycle Hooks
+
+Context API, useEffect, useState --- Newly added version by version
+
+Explanation:
+
+# Constructor()
+
+        constructor will execute at booting time of component --constructor will execute only once
+        Define state in constructor
+
+# componentWillMount()
+
+        componentWillMount() will execute after constructor
+        componentWillMount() will execute only once
+        in general we will do the initial modifications in state
+        in general we will set global parameters like width, height
+
+# render()
+
+        after componentWillMount() automatically render() function will execute
+        render() is mandatory lifecycle hook(main lifecycle hook)
+        in general, we will place presentation logic in render()
+        when ever change detected in state or props automatically this lifecycle hooks will execute
+
+# componentDidMount()
+
+        after render function immediately componentDidMount() life cycle hook will execute
+        in general we will make asynchronous calls in ComponentWillMount()
+        this is recommended state to change the state of component
+
+# componentWillReceiveProps()
+
+        when component will receive props from redux
+
+# shouldComponentUpdate()
+
+        if we want to update the state return "true" else "false"
+
+# UNSAFE_componentWillUpdate()
+
+        death method --> perform cleanup operations
+
+# componentDidUpdate()
+
+        if we integrate any third party UI elements
+        plugin logic will write here
+
+# componentWillUnmount()
+
+        Before killing the component componentWillUnmount is executed.
+        death method --> perform cleanup operations
+
+
+1. What is difference between controlled component and uncontrolled component?
+	a. Controlled component - form data can be handled react
+	b. Uncontrolled component - form data can be handled by DOM
+
+React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
+
+What is useState? useState is a Hook that lets you add React state to function components. Used for tracking states.
+
+React.js Workflows:
+2. Project Initialization:
+	○ Create a new project directory.
+	○ Initialize a Git repository.
+	○ Install Node.js and npm.
+	○ Install Create React App (CRA) or Vite globally.
+3. Project Setup:
+	○ Use CRA or Vite to create a new React project.
+	○ Add essential dependencies like React Router, Redux (if needed), and styling libraries.
+	○ Configure your preferred linter (e.g., ESLint) and testing framework (e.g., Jest).
+4. Component-Based Architecture:
+	○ Break down the UI into reusable components.
+	○ Create separate components for header, footer, navigation, content, etc.
+	○ Manage data flow and interactions within components using React's state management capabilities.
+5. Styling:
+	○ Use CSS preprocessors (e.g., Sass) for styling.
+	○ Implement a design system or style guide for consistency.
+	○ Utilize CSS modules or CSS-in-JS solutions for component-level styling.
+6. State Management:
+	○ Use a state management library like Redux or Zustand for complex applications.
+	○ Implement best practices like using immutable data structures and avoiding side effects.
+	○ Consider using a state management pattern like Flux or Redux Saga for more complex data flow.
+7. Testing:
+	○ Write unit tests for components using Jest or Enzyme.
+	○ Implement end-to-end testing using Cypress or Selenium.
+	○ Set up continuous integration (CI) to automate testing with every code change.
+8. Performance Optimization:
+	○ Implement code splitting and lazy loading for performance.
+	○ Use memoization and debouncing for performance-intensive operations.
+	○ Utilize tools like Lighthouse or WebPageTest to measure and improve performance.
+9. Deployment:
+	○ Set up a continuous deployment (CD) pipeline to automate the process of building, testing, and deploying code changes to production.
+	○ Consider using a hosting platform like Netlify or Vercel for easy deployment.
+10. Monitoring and Error Handling:
+	○ Implement error handling mechanisms for graceful error handling.
+	○ Use monitoring tools like Sentry or New Relic for error tracking and performance monitoring.
+	○ Set up alerts to notify you of any issues or errors in production.
+11. Collaboration and Communication:
+	○ Implement code review processes for code quality and maintainability.
+	○ Use collaboration tools like Slack or GitHub for team communication.
+	○ Maintain up-to-date documentation, including code documentation, user guides, and tutorials.
+12. Security:
+	○ Implement security measures to protect your application from vulnerabilities like cross-site scripting (XSS) and SQL injection.
+	○ Use tools like helmet or OWASP ZAP to identify and fix security issues.
+13. Accessibility:
+	○ Ensure your application is accessible to users with disabilities by following accessibility guidelines like WCAG.
+	○ Use tools like axe or aXe to test and improve accessibility.
+14. Progressive Enhancement:
+	○ Implement progressive enhancement to ensure your application works well on all devices and browsers, including those with limited capabilities.
+15. Internationalization (i18n) and Localization (l10n):
+	○ Implement i18n and l10n to support multiple languages and locales in your application.
+	○ Use tools like react-intl or i18next for easy internationalization.
+16. SEO:
+	○ Implement SEO best practices to improve your application's visibility in search engines.
+	○ Use tools like react-helmet or next-seo for easy SEO implementation.
+17. Analytics:
+	○ Integrate analytics tools like Google Analytics or Amplitude to track user behavior and measure the effectiveness of your application.
+18. Continuous Learning and Improvement:
+	○ Stay updated with the latest trends and technologies in front-end development.
+	○ Continuously improve your skills and knowledge through online courses, workshops, and conferences.
+
+
+=====================
+
+
+  => JavaScript is the Scripting language.
+ 
+    => JavaScript introduced by NetScape.
+ 
+    => current version of JavaScript is ES14.
+ 
+    => JavaScript is the synchronous language.
+ 
+    => we will execute JavaScript by using "interpreter".
+ 
+    => we will use JavaScript to build Angular, Nodejs, VueJS,........
+ 
+    => we will execute JavaScript by using browsers (or) node server.
+ 
+    => node server contains "node" tool, helps to execute the JavaScript.
+ 
+    => we will save the JavaScript files by using ".js" extension.
+ 
+    => recommended IDE to develop UI Applications is  Visual Studio Code, ATOM, WebStorm
+  
+    => Visual Studio Code IDE is the open source IDE, provided by Microsoft and recommended to develop UI Applications.
+====
+
+DOM: DOM stands for ‘Document Object Model’. In simple terms, it is a structured representation of the HTML elements that are present in a webpage or web-app. It contains a node for each HTML element present in the web document.
+
+========
+
+JSON
+----
+    - JSON Stands for Java Script Object Notation.
+
+    - JSON used to transfer the data over the Network.
+
+    - JSON is light weight compared to XML.
+
+    - parsing(Reading) of JSON Eazy compared to XML.
+
+Syntax
+------
+    Objects --- {}
+
+    Arrays  --- []
+
+    data    --- key & value pairs
+
+                key & value separated by using ":"
+
+                key & value pairs separated by using ","
+=======================
+
+Redux allows you to manage the state of the application via a unidirectional flow where a child component can directly access the state from the redux store instead of getting state changes from parent components.
+
+Why redux? used to implement the "state management".
+
+how to integrate redux to react? react-redux
+why react-redux? used to integrate redux to react application. Ex: fetch action, insert, update, delete
+
+how to separate the actions? redux-thunx
+why redux-thunx? used to separate and manage the actions.
+
+how to connect to server? axios.
+why Axios? axios module used to make the rest api calls.
+
+Why Saga?
+- Sagas are created by using “generator” functions.
+- Sagas takes advantage of the “yield” keyword to halt execution within a function. 
+- Easy to test
+- It is useful to express complex application logic.	
+
+Unit testing?
+ in react, we will write unit test cases by using 3rd party libraries JEST, Enzyme, Mocha.
+//test is the predefined function, used to write the unit testing code
+
+ Unit Testing
+Unit Testing With Jest
+Jest is an open-source testing framework created by Facebook. 
+Jest offers the best integration with ReactJS including a command line tool for test execution.
+Jest also offers “snapshot testing” to verify the component rendering result.
+
+
+jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. 
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+
+State	Props
+1. state is the predefined object in react library	1. "props" is the predefined property in react library.
+2. state used to store the component data.	2.  "props" used to receive the data from 3rd party resources
+3. we will define state by using "state" keyword	(Components, Redux, Saga, Thunk,.....
+4. "state" keyword is the predefined keyword.	3. “Props” is a special keyword in React, which stands for properties and is being used for passing data from one component to another. 
+5. constructor is the best place to define the state	4. “props” are basically kind of global variable or object. 
+	5. The data in states and props are used to render the Component with dynamic data. 
+	6. Props are passed to components via HTML attributes. 
+	7. We can say, props are immutable (unable to be changed).
+
+
+React Context API is a way to essentially create global variables that can be passed around in a React app. This is the alternative to "prop drilling", or passing props from grandparent to parent to child, and so on. 
+Context is often touted as a simpler, lighter solution to using Redux for state management.
+
+
+There are 8 basic data types in JavaScript.
+
+Seven primitive data types:
+number for numbers of any kind: integer or floating-point, integers are limited by ±(253-1).
+bigint for integer numbers of arbitrary length.
+string for strings. A string may have zero or more characters, there’s no separate single-character type.
+boolean for true/false.
+null for unknown values – a standalone type that has a single value null.
+undefined for unassigned values – a standalone type that has a single value undefined.
+symbol for unique identifiers.
+And one non-primitive data type:
+object for more complex data structures.
+
+
+What is Component in React?
+Components are the building blocks of any React app and a typical React app will have many of these. Simply put, a component is a JavaScript class or function that optionally accepts inputs i.e. properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
+
+What is DOM? ReactJS | Virtual DOM
+DOM: DOM stands for ‘Document Object Model’. In simple terms, it is a structured representation of the HTML elements that are present in a webpage or web-app. It contains a node for each HTML element present in the web document.
+
+
+What is Functional Component?
+A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element. 
+or
+A Functional component is a function that takes props and returns JSX. They do not have state or lifecycle methods. Functional components are easier to read, debug, and test. They offer performance benefits, decreased coupling, and greater reusability.
+
+What is class component?
+
+A class component requires you to extend from React.Component and create a render function which returns a React element. 
+
+
+=======
+
+What is Node JS? 
+ 
+  - Node JS is Server Side Scripting language.
+ 
+  - by using NodeJS we can develop Http Servers.
+ 
+  - we can develop Node Applications by using JavaScript.
+ 
+  - Node Follows Event Driven Model.
+ 
+  - Node Supports the Modules
+         Predefined Modules & Custom Modules
